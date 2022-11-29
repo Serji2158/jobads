@@ -1,0 +1,699 @@
+@media screen and (max-width: 639px) {
+  .container {
+    padding: 25px 15px 35px 15px;
+    background-color: #ffffff;
+  }
+
+  .head {
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-between; */
+    /* border-bottom: 1px solid rgba(58, 69, 98, 0.13); */
+    /* padding: 10px; */
+    /*  */
+    /* width: 723px; */
+    /* height: 44px; */
+    margin-bottom: 40px;
+  }
+
+  .titleLable {
+    margin: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(58, 69, 98, 0.13);
+    font-size: 28px;
+    font-weight: 700;
+    /* line-height: 1.2; */
+    letter-spacing: 0.41px;
+    color: #3a4562;
+  }
+  .frames {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    height: 30px;
+    margin-top: 25px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.56px;
+    color: #3a4562;
+  }
+  .btnIcon {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .bookmarkIcon {
+    display: none;
+  }
+  .starIcon,
+  .shareIcon {
+    width: 21px;
+    height: 20px;
+  }
+  .frameText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #38415d;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 130px;
+    height: 50px;
+    background-color: #384564;
+    border-radius: 8px;
+    align-items: center;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .btn2 {
+    margin: 20px auto 135px auto;
+    display: block;
+  }
+
+  .titleHead {
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: space-between; */
+    margin-top: 30px;
+  }
+
+  .title {
+    margin: 0;
+    /* width: 700px; */
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: -0.75px;
+    text-align: left;
+    color: #3a4562;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .paymentCondition {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .salary {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.63px;
+    color: #3a4562;
+  }
+
+  .brutto {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.56px;
+    text-align: end;
+    color: #3a4562;
+  }
+
+  .postedDate {
+    /* margin-top: 7px; */
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.91;
+    color: rgba(56, 65, 93, 0.6021);
+  }
+
+  .postedDateDesctop {
+    display: none;
+  }
+
+  .jobDescription {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: -0.56px;
+    color: #3a4562;
+  }
+
+  .sectionTitle {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.63px;
+    color: #3a4562;
+  }
+  .benefits {
+    margin-top: 15px;
+    /* margin-bottom: 25px; */
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: #3a4562;
+  }
+
+  .benefitsList {
+    padding: 15px;
+    list-style: square;
+  }
+
+  .benefitsBullet {
+    /* list-style: square; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: #3a4562;
+  }
+
+  .addinfoTitle {
+    /* margin-top: 85px;
+    margin-bottom: 0; */
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.41px;
+    color: #3a4562;
+    border-bottom: 1px solid rgba(58, 69, 98, 0.13);
+    padding: 10px;
+  }
+  .addinfoTitle:not(:first-child) {
+    margin-top: 65px;
+  }
+  .addinfoSection {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: -0.56px;
+    color: #3a4562;
+  }
+
+  .benefitList,
+  .jobtypeList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .jobtypeItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    width: 220px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid rgba(85, 105, 158, 0.3);
+    background-color: rgba(85, 105, 158, 0.3);
+
+    color: #55699e;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .benefitItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 8px;
+
+    list-style: none;
+    background-color: rgba(255, 207, 0, 0.15);
+    border: 1px solid #ffcf00;
+    color: #988b49;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .jobtypeItem + .jobtypeItem,
+  .benefitItem + .benefitItem,
+  .image + .image {
+    margin-left: 8px;
+  }
+
+  .imagesList {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .image {
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 116px;
+    width: 200px;
+  }
+
+  .btnReturn {
+    width: 215px;
+    height: 50px;
+    margin-bottom: 150px;
+  }
+
+  .contacts {
+    margin-top: 65px;
+    overflow: hidden;
+  }
+
+  .contactsTitle {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.41px;
+    color: #3a4562;
+    border-bottom: 1px solid rgba(58, 69, 98, 0.13);
+    padding: 10px;
+  }
+
+  .top {
+    /* position: relative; */
+
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-top: 20px;
+    padding: 30px 60px;
+    height: 220px;
+    overflow: hidden;
+    background-color: #2a3047;
+  }
+
+  .contactsDesc {
+    font-style: normal;
+    margin: 0 auto;
+  }
+
+  .contactName {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    color: #e7eaf0;
+  }
+  .Location {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 7px;
+  }
+  .contactsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .address,
+  .tel,
+  .mail {
+    color: #e7eaf0;
+    font-size: 16px;
+    line-height: 1.14;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+  }
+
+  .address {
+    margin-left: 8px;
+  }
+
+  .btnReturn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px auto;
+    width: 215px;
+    height: 50px;
+    padding: 18px 22px;
+    border-radius: 8px;
+    background-color: rgba(85, 105, 158, 0.2);
+    color: #3a4562;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    background: #ffffff;
+  }
+
+  .wrapper {
+    display: flex;
+    margin: auto;
+    max-width: 1345px;
+    padding: 55px 10px 95px 10px;
+  }
+
+  .details {
+    flex: 2;
+    margin-left: 80px;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(58, 69, 98, 0.13);
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .titleLable {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.41px;
+    color: #3a4562;
+  }
+  .frames {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    height: 30px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.56px;
+    color: #3a4562;
+  }
+  .starIcon {
+    display: none;
+  }
+  .bookmarkIcon,
+  .shareIcon {
+    width: 16px;
+    height: 20px;
+  }
+
+  .btnIcon {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .btn1,
+  .btn2 {
+    width: 130px;
+    height: 50px;
+    background-color: #384564;
+    border-radius: 8px;
+    align-items: center;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .titleHead {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .title {
+    width: 500px;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #3a4562;
+    margin: 0;
+  }
+
+  .paymentCondition {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .salary {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #3a4562;
+  }
+
+  .brutto {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #3a4562;
+  }
+
+  .postedDate {
+    display: none;
+  }
+
+  .postedDateDesctop {
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: rgba(56, 65, 93, 0.356);
+  }
+
+  .jobDescription {
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: #3a4562;
+  }
+
+  .sectionTitle {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #3a4562;
+  }
+  .benefits {
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: #3a4562;
+  }
+
+  .benefitsList {
+    padding: 0;
+  }
+
+  .benefitsBullet {
+    list-style: square;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: #3a4562;
+  }
+
+  .addinfoTitle {
+    margin-top: 85px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.41px;
+    color: #3a4562;
+    border-bottom: 1px solid rgba(58, 69, 98, 0.13);
+    padding: 10px;
+  }
+  .addinfoSection {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: -0.56px;
+    color: #3a4562;
+  }
+
+  .benefitList,
+  .jobtypeList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .jobtypeItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    width: 220px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid rgba(85, 105, 158, 0.3);
+    background-color: rgba(85, 105, 158, 0.3);
+
+    color: #55699e;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .benefitItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 8px;
+
+    list-style: none;
+    background-color: rgba(255, 207, 0, 0.15);
+    border: 1px solid #ffcf00;
+    color: #988b49;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .jobtypeItem + .jobtypeItem,
+  .benefitItem + .benefitItem,
+  .image + .image {
+    margin-left: 8px;
+  }
+
+  .imagesList {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .image {
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 116px;
+    width: 200px;
+  }
+
+  .contactsTitle {
+    display: none;
+  }
+  .contacts {
+    flex: 1;
+    margin-left: 70px;
+    overflow: hidden;
+  }
+
+  .top {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 30px 60px;
+    height: 220px;
+    overflow: hidden;
+    background-color: #2a3047;
+  }
+
+  .contactsDesc {
+    position: absolute;
+
+    color: white;
+    font-style: normal;
+    z-index: 1000;
+  }
+
+  .contactName {
+    color: #e7eaf0;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.63px;
+  }
+  .Location {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .address,
+  .tel,
+  .mail {
+    color: #e8ebf3;
+    font-size: 18px;
+    line-height: 1.14;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+  }
+
+  .address {
+    margin-left: 8px;
+  }
+
+  .contactsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .btnReturn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto 160px 50px;
+    width: 215px;
+    height: 50px;
+    padding: 18px 22px;
+    border-radius: 8px;
+    background-color: rgba(85, 105, 158, 0.2);
+    color: #3a4562;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+}
