@@ -14,7 +14,7 @@
             @apply flex mt-4 sm:w-3/4;
 
             .image {
-              @apply h-20 w-20 rounded-full;
+              @apply h-20 w-20 rounded-full object-contain;
             }
 
             .desc {
