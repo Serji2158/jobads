@@ -1,0 +1,181 @@
+  .container {
+    @apply px-4 pt-6 pb-9 bg-white;
+
+    .wrapper {
+      @apply xl:flex xl:m-auto xl:max-w-7xl xl:pt-14 xl:pr-3 xl:pb-24 xl:pl-3;
+
+      .details {
+        @apply xl:w-2/3 xl:ml-20;
+
+        .head {
+          @apply mb-10 xl:flex xl:items-center xl:justify-between xl:p-2 xl:border-b xl:border-fiord xl:border-opacity-10;
+      
+          .titleLable {
+            @apply m-0 pb-3 border-b border-fiord border-opacity-10 text-3xl font-bold leading-tight tracking-wide text-fiord xl:border-none xl:pb-0;
+          }
+      
+          .frames {
+            @apply flex items-center justify-around w-64 h-8 mt-6 text-lg font-normal leading-snug tracking-tight text-fiord ;
+          }
+      
+          .btnIcon {
+            @apply flex items-center p-0 m-0 border-none bg-transparent cursor-pointer;
+          }
+      
+          .bookmarkIcon {
+            @apply hidden xl:block xl:w-5 xl:h-5;
+          }
+      
+          .starIcon {
+            @apply xl:hidden;
+          }
+          .starIcon,
+          .shareIcon {
+            @apply w-5 h-5;
+          }
+      
+          .frameText {
+            @apply text-base font-normal leading-snug text-oxford-blue;
+          }
+        }
+          
+            .btn1,
+            .btn2 {
+              @apply w-32 h-12 bg-pickled-bluewood border-none rounded-lg items-center text-xs font-semibold leading-snug text-white cursor-pointer uppercase;
+            }
+          
+            .btn1 {
+              @apply hidden xl:block;
+            }
+          
+            .btn2 {
+              @apply mx-auto mt-5 mb-32 block xl:mx-0;
+            }
+          
+            .titleHead {
+              @apply mt-7 xl:flex xl:items-start xl:justify-between;
+          
+              .title {
+                @apply m-0 text-2xl font-bold leading-tight tracking-tight text-left text-fiord xl:w-[500px];
+              }
+          
+              .middle {
+                @apply flex flex-row-reverse justify-between items-center mt-1;
+          
+                .paymentCondition {
+                  @apply flex flex-col-reverse xl:flex-col;
+          
+                  .salary {
+                    @apply text-xl font-bold leading-tight tracking-tight text-fiord;
+                  }
+          
+                  .brutto {
+                    @apply text-lg font-normal tracking-tight text-end text-fiord;
+                  }
+                }
+          
+                .postedDate {
+                  @apply text-xs font-normal text-oxford-blue text-opacity-60 xl:hidden;
+                }
+              }
+            }
+          
+            .postedDateDescktop {
+              @apply hidden xl:block xl:mt-2 xl:text-lg xl:font-normal xl:text-fiord xl:text-opacity-40;
+            }
+          
+            .jobDescription {
+              @apply mt-4 text-lg font-normal leading-tight  text-fiord;
+            }
+          
+            .sectionTitle {
+              @apply mt-10 mb-0 text-xl font-bold leading-tight tracking-tight text-fiord
+            }
+          
+            .benefits {
+              @apply mt-4 text-base font-normal leading-tight text-fiord xl:mt-3 xl:mb-6 xl:text-lg;
+          
+              .benefitsList {
+                @apply p-4 list-[square] xl:p-0;
+          
+                .benefitsBullet {
+                  @apply text-lg font-normal leading-tight text-fiord;
+                }
+              }
+            }
+          
+            .addinfoTitle {
+              @apply m-0 text-2xl font-bold text-fiord py-3 border-b border-fiord border-opacity-20 mt-16 xl:mt-20 xl:mb-0 xl:text-3xl;
+            }
+          
+            .addinfoSection {
+              @apply mt-5 text-lg font-normal leading-tight tracking-tighter text-fiord;
+          
+              .benefitList,
+              .jobtypeList {
+                @apply flex items-center justify-start p-0 mt-3 mb-5 space-x-3;
+              }
+          
+              .jobtypeItem {
+                @apply flex items-center justify-center list-none w-56 h-14 rounded-lg border-waikawa-gray border-opacity-30 bg-waikawa-gray bg-opacity-30 text-waikawa-gray text-base font-bold space-x-2;
+              }
+          
+              .benefitItem {
+                @apply flex justify-center items-center list-none w-56 h-14 rounded-lg bg-supernova bg-opacity-25 border-supernova text-limed-oak text-base font-bold;
+              }
+            }
+          
+            .imagesList {
+              @apply flex items-center mt-5 p-0 space-x-3;
+          
+              .image {
+                @apply list-none rounded-lg overflow-hidden h-28 w-48;
+              }
+            }
+      }      
+      
+      .contacts {
+        @apply mt-16 overflow-hidden xl:mt-0 xl:w-1/3 xl:ml-14;
+    
+        .contactsTitle {
+          @apply m-0 p-3 text-2xl font-bold  text-fiord border-b border-fiord border-opacity-10 xl:hidden;
+        }
+    
+        .top {
+          @apply flex items-center mt-5 px-16 py-8 h-52 overflow-hidden bg-ebony-clay rounded-t-lg xl:relative xl:mt-0 xl:px-12;
+    
+          .contactsDesc {
+            @apply my-0 mx-auto not-italic xl:absolute xl:z-[1000] xl:w-64;
+    
+            .contactName {
+              @apply text-base font-bold text-athens-gray xl:text-lg xl:leading-tight;
+            }
+    
+            .Location {
+              @apply flex items-center mt-4 mb-2 xl:mt-2 xl:leading-tight;
+    
+              .address {
+                @apply text-athens-gray text-base leading-tight font-normal ml-2;
+              }    
+            }
+    
+            .contactsList {
+              @apply list-none flex flex-col justify-start;
+    
+              .tel,
+              .mail {
+                @apply text-athens-gray text-base leading-tight font-normal;
+              }
+            }
+          }
+    
+        }
+      }
+    } 
+    
+    .btnReturn {
+      @apply flex items-center justify-between my-16 mx-auto w-56 h-14 py-5 px-6 rounded-lg bg-waikawa-gray bg-opacity-20 text-fiord text-xs leading-snug font-semibold xl:mt-10 xl:mr-auto xl:mb-40 xl:ml-12;
+    }
+  }  
+    
+

@@ -10,7 +10,9 @@ const nextConfig = {
         pathname: '/**',
       },
      ],
+     
   },
+  
     
   webpack(config) {
     config.module.rules.push({

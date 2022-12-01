@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import {FC} from "react"
+import { FC } from "react"
 import Circle from './Circle'
 import Googlemap from './Map'
 import { ArrowBack, Bookmark, Location, Share, Star } from './svg'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import s from '../styles/JobcardDetails.module.css'
+import s from '../styles/JobcardDetails.module.scss'
 import { jobcardType } from '../types'
 
 dayjs.extend(relativeTime)
@@ -43,7 +43,7 @@ const JobcardDetails:FC<JobcardDetailsProps> = ({ jobdetaile }) => {
             <span className={s.frameText}>Share</span>
           </div>          
         </div>
-        <button className={s.btn1}>APPLY NOW</button>
+        <button className={s.btn1}>Apply now</button>
         <section className={s.description}>
           <div className={s.titleHead}>
             <h1 className={s.title}>{jobdetaile.title}</h1>
@@ -53,15 +53,15 @@ const JobcardDetails:FC<JobcardDetailsProps> = ({ jobdetaile }) => {
                 &#8364; {optimizedSalary}
               </span>
               <span className={s.brutto}>Brutto, per year</span>
-            </div>
-            <div className={s.dateinfo}>
+              </div>
+              <div className={s.dateinfo}>
               <p className={s.postedDate}>Posted {postedDate}</p>
-            </div>
+              </div>
             </div>
           </div>
-          <p className={s.postedDateDesctop}>Posted {postedDate}</p>
+          <p className={s.postedDateDescktop}>Posted {postedDate}</p>
           <section className={s.jobDescription}>{jobdescription}</section>
-          <h3 className={s.sectionTitle}>Responsopilities</h3>
+          <h3 className={s.sectionTitle}>Responsobilities</h3>
           <section className={s.jobDescription}>{responsobilities}</section>
           <h3 className={s.sectionTitle}>Compensation & Benefits:</h3>
           <section className={s.benefits}>
@@ -73,7 +73,7 @@ const JobcardDetails:FC<JobcardDetailsProps> = ({ jobdetaile }) => {
             </ul>
           </section>          
         </section>   
-        <button className={s.btn2}>APPLY NOW</button>
+        <button className={s.btn2}>Apply now</button>
         <h2 className={s.addinfoTitle}>Additional info</h2>
         <section className={s.addinfoSection}>Employment type
           <ul className={s.jobtypeList}>

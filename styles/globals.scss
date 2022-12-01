@@ -10,7 +10,15 @@ p,
 ul {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.map-container {
+  @apply h-56 rounded-b-lg;
+}
+
+.circle {
+  @apply xl:w-64 xl:h-64 xl:rounded-full xl:absolute xl:z-[100] xl:m-auto;
 }
 
 a {
@@ -20,27 +28,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.map-container {
-  height: 218px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-@media screen and (min-width: 640px) {
-  .circle {
-    width: 273px;
-    height: 273px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 100;
-    margin: auto;
-  }
-  .map-container {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {

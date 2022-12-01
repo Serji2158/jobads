@@ -1,21 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import s from '../styles/Jobcard.module.css'
 import { Bookmark, Location, StarDark } from './svg'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
-// import Geocode from "react-geocode";
 import {jobcardType} from "../types"
-// import LocationArea from './LocationArea'
+import s from '../styles/Jobcard.module.scss'
 
 dayjs.extend(relativeTime)
 
-// Geocode.setApiKey(process.env.NEXT_PUBLIC_GEOCODE_API_KEY);
-// Geocode.setApiKey(process.env.API_KEY);
-
-// Geocode.setApiKey("AIzaSyDW2nEkofzTvFs2bAeU45B3fF4Mp0_YUmo");
-// Geocode.setLocationType("ROOFTOP");
-// Geocode.setLanguage("en");
 
 type Props = {
   joblist: jobcardType[];
@@ -32,8 +24,8 @@ const Jobcard = ({ joblist }: Props) => {
                 <Image
                   src="/hospital.png"
                   alt="picture of logo"
-                  width={70}
-                  height={70}
+                  width={80}
+                  height={80}
                   className={s.image}
                 />
                 <div className={s.desc}>

@@ -1,0 +1,13 @@
+.container {
+
+  @apply my-20 p-5 text-center;
+
+  .title {
+   @apply font-bold text-5xl; 
+  }
+
+  .text {
+    @apply font-bold text-4xl;
+  }
+}
+

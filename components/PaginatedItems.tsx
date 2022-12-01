@@ -1,7 +1,7 @@
-import Jobcard from "./Jobcard"
 import React, { FC, useEffect, useState } from 'react';
+import Jobcard from "./Jobcard"
 import ReactPaginate from 'react-paginate';
-import s from '../styles/Pagination.module.css'
+import s from '../styles/Pagination.module.scss'
 import { jobcardType } from '../types'
 
 
@@ -22,7 +22,6 @@ const PaginatedItems:FC<IPaginatedItems> = ({ joblistdata, itemsPerPage }) => {
   // (This could be items from props; or items loaded in a local state
   // from an API endpoint with useEffect and useState)
   useEffect(() => {
-    // console.log(joblistdata);
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(joblistdata.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(joblistdata.length / itemsPerPage));
@@ -47,7 +46,6 @@ const PaginatedItems:FC<IPaginatedItems> = ({ joblistdata, itemsPerPage }) => {
         pageCount={pageCount}
         previousLabel="<"
         previousLinkClassName={s.pageprevious}
-        // renderOnZeroPageCount={null}
         containerClassName={s.pagination}
         pageLinkClassName={s.pagenum}        
         activeLinkClassName={s.active}

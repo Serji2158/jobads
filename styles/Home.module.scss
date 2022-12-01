@@ -1,0 +1,13 @@
+.container {
+  @apply flex flex-col justify-center items-center py-0 px-8 bg-slate-200 h-screen;
+
+  .wellcomeText {
+      @apply m-5 p-12 font-medium rounded-lg bg-waikawa-gray
+      bg-opacity-20 text-fiord text-xl;
+    }
+
+    .link {
+      @apply flex items-center justify-center m-10 w-36 h-12 border border-ebony-clay border-solid rounded-lg uppercase hover:bg-waikawa-gray hover:text-white cursor-pointer font-bold;
+    }
+}
+

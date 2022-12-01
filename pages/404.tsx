@@ -4,7 +4,7 @@ import React from "react"
 import { useEffect } from "react"
 import { useRouter } from "next/router"
 
-import s from "../styles/404.module.css"
+import s from "../styles/404.module.scss"
 
 
 const Error = () => {
@@ -22,8 +22,8 @@ const Error = () => {
         <title>Error Page</title>
         <meta name="description" content="Error page" />
       </Head>
-        <h1>404</h1>
-          <h2>
+        <h1 className={s.title}>404</h1>
+          <h2 className={s.text}>
         Something went wrong...!
         </h2>
       </div>    
