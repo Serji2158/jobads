@@ -1,15 +1,21 @@
 import { useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { locationType } from "../types"
+import env from 'process'
 
 interface IProps {
   location: locationType;
   }
 
+declare const process : {
+  env: {
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: string
+  }
+}
 
 const Googlemap = ({ location }: IProps) => {
   
-  const { isLoaded, loadError  } = useLoadScript({ googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY });
+  const { isLoaded, loadError } = useLoadScript({ googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY });
 
   if (loadError) return <div>Error</div>;
   if (!isLoaded) return <div></div>;
