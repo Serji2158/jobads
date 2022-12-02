@@ -5,8 +5,15 @@ import PaginatedItems from '../../components/PaginatedItems'
 import { FC } from 'react'
 import { jobcardType } from '../../types'
 
-const BASE_URL = "https://api.json-generator.com/templates/ZM1r0eic3XEy/data"
-const TOKEN = process.env.NEXT_PUBLIC_BEARER_TOKEN;
+declare const process : {
+  env: {
+    NEXT_PUBLIC_BASE_URL: string
+    NEXT_PUBLIC_BEARER_TOKEN: string
+  }
+}
+
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+export const TOKEN = process.env.NEXT_PUBLIC_BEARER_TOKEN;
 
 export const getStaticProps = async () => {
   
