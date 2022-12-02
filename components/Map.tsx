@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { locationType } from "../types"
-import env from 'process'
+
 
 interface IProps {
   location: locationType;
