@@ -12,12 +12,12 @@ declare const process : {
   }
 }
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+// export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 export const TOKEN = process.env.NEXT_PUBLIC_BEARER_TOKEN;
 
 export const getStaticProps = async () => {
   
-  const response = await fetch(BASE_URL,
+  const response = await fetch("https://api.json-generator.com/templates/ZM1r0eic3XEy/data",
     {
       headers: {
         Authorization: `Bearer ${TOKEN}`

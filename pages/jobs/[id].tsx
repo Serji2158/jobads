@@ -3,12 +3,12 @@ import JobcardDetails from '../../components/JobcardDetails'
 // import { mocdata } from '../../data'
 import {jobcardType} from '../../types'
 import s from '../../styles/JobcardDetails.module.scss'
-import { BASE_URL, TOKEN} from './index'
+import { TOKEN } from './index'
 
 
 export const getStaticPaths = async () => {
  
-  const response = await fetch(BASE_URL,
+  const response = await fetch("https://api.json-generator.com/templates/ZM1r0eic3XEy/data",
     {
       headers: {
         Authorization: `Bearer ${TOKEN}`
@@ -35,7 +35,7 @@ export const getStaticProps = async (context: { params: { id: any } }) => {
   // console.log(context);
   const id  = context.params.id;
 
-  const response = await fetch(BASE_URL,
+  const response = await fetch("https://api.json-generator.com/templates/ZM1r0eic3XEy/data",
     {
       headers: {
         Authorization: `Bearer ${TOKEN}`
