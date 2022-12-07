@@ -10,7 +10,7 @@
 
  .pageprevious,
  .pagenext {
-    @apply text-raven text-opacity-40;
+    @apply text-raven text-opacity-40 after:border-collapse;
   }
 
   .active {

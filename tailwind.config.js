@@ -21,6 +21,9 @@ module.exports = {
         'indigo': '#5876c5',
       },      
     },
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif'],
+    },
   },
   plugins: [],
 }
